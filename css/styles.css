@@ -2,9 +2,46 @@ body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*  Revisar tamaños de las imagenes finales */
+
+.carousel-custom img{
+    height: 20rem;
+}
+
 .carousel-custom{
     max-width: 30%;
     margin: 0 auto;
-
 }
 
+#contenedor-principal{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 2em;
+    justify-content: space-between;
+    color: #F2F2F2;
+    max-width: 100%;
+    text-align: center;
+}
+header h1{
+    width: 33%;
+    letter-spacing: 0.09    em;
+}
+.menu{
+    width: 33%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1em;
+    width: 33%;
+    justify-content: center;
+}
+svg{
+    fill: #F2F2F2;
+}
