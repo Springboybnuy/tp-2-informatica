@@ -31,7 +31,7 @@ header h1{
     width: 33%;
     letter-spacing: 0.09em;
 }
-.menu{
+.menu-icono{
     width: 33%;
 }
 #header-iconos{
@@ -103,15 +103,56 @@ button a{
     text-decoration: none;
     color: #F2F2F2;
 }
+
+button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 40px 8px #F2F2F2;
+    cursor: pointer;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+
+.botonderecha{
+    width: 30%;
+}
+
 /*SECCION BIO*/
-#bio-section{
-    max-height: 1440px;
+#bio-section {
     display: flex;
-    flex-wrap: wrap;
+}
+.foto-bio{
+    min-height: 100vh; 
+    
+    max-height: 1800px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.326), rgb(0, 0, 0)),
+                      url('../img/babasonicos_escenario.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/*INICIO NAVEGACION*/
+.nav-inicio{
+    background-image: url('../img/babasonicos_escenario.png');
+    background-size: cover;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    max-height: 1440px;
+    color: #F2F2F2;
+    display: flex;
     align-items: center;
+    justify-content: flex-end;
     
 }
-.fotoinicio{
+#nav-inicio-li{
+    list-style: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #F2F2F2;
     
+}
+ul li a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.09em;
+    font-size: 1.5em;
 }
 
