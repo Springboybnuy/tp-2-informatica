@@ -96,7 +96,7 @@ footer{
     border-radius: 3.12rem;
     border: none;
     background-color: black;
-    box-shadow: 0px 4px 30px 4px #F2F2F2;
+    box-shadow: 0em 0.4em 1.8em 0.4em #F2F2F2;
     overflow: visible;
     white-space: nowrap;
     text-decoration: none;
@@ -205,3 +205,62 @@ ul li a{
     justify-content: center;
 }
 
+
+/*SECCION TOURS*/
+.contenedor-show{
+    width: 48%;
+    max-width: 48%;
+    height: 8.75em;
+    background-color: #000000;
+    border-radius: 2em 0.313em 0.313em 2em;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0em 0.8em 2em 0.1em #F2F2F2; 
+}
+.contenedor-fecha{
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #F2F2F2;
+    line-height: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.seccion-tours{
+    padding: 5em;
+    
+}
+.contenedor-show-container{
+   width: 100%;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2em;
+}
+
+.contenedor-get-ticket{
+    display: flex;
+    justify-content: center;
+    padding: 0em 1em 0em 0em;
+    width: 15.5em;
+}
+.lugar-show{
+    color: #b0b0b0;
+}
+.boton-ticket{
+    width: 11.063em;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 1.8em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.radio-derecho{
+    border-radius:0.313em 2em 2em 0.313em;
+}
