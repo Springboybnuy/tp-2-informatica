@@ -143,6 +143,7 @@ footer{
     white-space: nowrap;
     text-decoration: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #F2F2F2;
 
 }
 
@@ -161,8 +162,11 @@ button:hover, header a:hover{
 
 
 
-
-/*INICIO NAVEGACION*/
+/*
+==================
+------------INICIO
+==================
+*/
 .contenedor-inicio{
     color: #F2F2F2;
     display: flex;
@@ -225,7 +229,11 @@ ul li a{
 
 
 
-/*SECCION BIO*/
+/*
+=======================
+------------BIO-SECCION
+=======================
+*/
 #bio-section {
     display: flex;
     align-items: center;
@@ -249,7 +257,11 @@ ul li a{
 }
 
 
-/*SECCION TOURS*/
+/*
+=======================
+------------SECCION TOUR
+=======================
+*/
 .contenedor-show{
     width: 48%;
     max-width: 48%;
@@ -259,7 +271,7 @@ ul li a{
     border: none;
     display: flex;
     align-items: center;
-    box-shadow: 0em 0.8em 2em 0.1em #F2F2F2; 
+; 
 }
 .contenedor-show:hover{
       transform: translateY(-0.3em);
@@ -288,6 +300,8 @@ ul li a{
    justify-content: center;
    flex-wrap: wrap;
    gap: 2em;
+   z-index: 0;
+   position: relative;
 }
 
 .contenedor-get-ticket{
@@ -312,3 +326,68 @@ ul li a{
 .radio-derecho{
     border-radius:0.313em 2em 2em 0.313em;
 }
+.button-tours{
+    width: 100%;
+    display: flex;
+    padding: 3em;
+    justify-content: center;
+}
+
+.contenedor-show-container::after {
+    content: ""; 
+    
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 10em;
+    
+    background: linear-gradient(
+        to top, 
+        #000000 20%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    
+}
+
+
+/*
+==================
+------------TIENDA
+==================
+*/
+
+#tienda-section {
+    display: flex;
+    align-items: center;
+ 
+}
+.img-tienda-contenedor{
+    max-width: 40%;
+    height: 45rem;
+}
+.img-tienda-index {
+     mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+}
+.contenedor-boton-tienda{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.botonizquierda{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+/*
+===============
+-------GALERIA
+===============
+*/
+
+
+
+
