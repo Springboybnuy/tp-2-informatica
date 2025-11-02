@@ -1,6 +1,10 @@
 body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+h1 a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
 
 /*  Revisar tamaños de las imagenes finales */
 
@@ -47,6 +51,7 @@ body {
   font-size: 1rem;
   border: none;
 }
+
 
 label{
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -148,12 +153,16 @@ footer{
 
 }
 
+
 button a{
     text-decoration: none;
     color: #F2F2F2;
 }
+.boton-ticket a{
+    color: #000000;
+}
 
-button:hover, header a:hover{
+button:hover{
     transform: translateY(-0.3em);
     box-shadow: 0px 8px 40px 8px #F2F2F2;
     cursor: pointer;
@@ -279,6 +288,13 @@ ul li a{
       box-shadow: 0px 8px 40px 8px #F2F2F2;
       transition: transform 0.8s ease, box-shadow 0.8s ease;
 }
+
+.contenedor-show button:hover{
+    box-shadow: none !important;
+    transition: none !important;
+    transform:none !important;
+}
+
 .contenedor-fecha{
     display: flex;
     flex-direction: column;
@@ -385,10 +401,81 @@ ul li a{
 
 /*
 ===============
--------GALERIA
+-------GALERIA-seccion
 ===============
 */
 
 
 
+/*
+===============
+-------BIO-PAGE
+===============
+*/
 
+.contenedor-bio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-img-bio{
+    display: flex;
+    justify-content: center;
+}
+.img-bio{
+    mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+    width: 60rem;
+}
+.contenedor-texto-bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em 20em;
+}
+
+.contenedor-texto-bio p{
+    font-size: 1.8em;
+    color: #f2f2f2c9;
+    text-align: center;
+}
+
+.contenedor-iframe-apple{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*
+===============
+-------TOURS
+===============
+*/
+.contenedor-shows-tours{
+   width: 100%;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2em;
+   z-index: 0;
+   position: relative;
+}
+
+.contenedor-titulo-tours{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.09em;
+    padding: 0em 0em 5em 0em;
+}
+
+.contenedor-tours{
+    padding: 20em 0em 0em 0em;
+}
