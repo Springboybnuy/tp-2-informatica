@@ -7,10 +7,14 @@ h1 a{
     color: #F2F2F2;
 }
 
+
 /*  Revisar tamaños de las imagenes finales */
 
 .carousel-custom img{
     height: 20rem;
+}
+.contenedor-img-autores{
+    padding: 15em 0 0 0em;
 }
 
 .carousel-custom{
@@ -64,7 +68,20 @@ h1 a{
   flex-direction: column;
   align-items: center;
 }
-
+.imagen-con-texto h3{
+    padding: 1em 0em 0.3em 0em;
+    color: #F2F2F2;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.09em;
+}
+.imagen-con-texto p{
+    color: #F2F2F2;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.09em;
+    font-size: 1.3em;
+    width: 40%;
+    text-align: center;
+}
 
 .altura{
     height: 140vh;
@@ -441,6 +458,7 @@ ul li a{
 .contenedor-img-bio{
     display: flex;
     justify-content: center;
+    padding: 10em 0em 0em 0em
 }
 .img-bio{
     mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
