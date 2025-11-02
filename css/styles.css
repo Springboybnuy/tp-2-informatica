@@ -1,5 +1,6 @@
 body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 /*  Revisar tamaños de las imagenes finales */
@@ -47,6 +48,24 @@ body {
   font-size: 1rem;
   border: none;
 }
+
+
+.us {
+  width: 40%;
+  height: auto;
+}
+
+.imagen-con-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.altura{
+    height: 140vh;
+}
+
 
 label{
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
