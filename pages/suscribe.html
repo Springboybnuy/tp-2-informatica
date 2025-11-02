@@ -21,6 +21,7 @@
 
 <body>
 <div id="contenedor-principal">
+
     <header class="encabezado">
     <!--ICONOS REDES-->
     <ul id="header-iconos">
@@ -70,7 +71,7 @@
 
 
 
-<div class="d-flex justify-content-center align-items-center vh-100">
+<div class="d-flex justify-content-center align-items-center vh-100 ">
 
 <form
   action="https://formspree.io/f/xgvpolge"
@@ -78,8 +79,10 @@
   class="forms"
 >
   <label>
-    Correo:
-    <input type="email" name="email" required>
+    Mail:
+    <input type="email" name="email" required
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      title="Ingresa un correo válido">
   </label>
 
   <label>
@@ -88,9 +91,11 @@
   </label>
   
   <label>
-   Teléfono:
-    <input type="tel" name="telefono" required>
+    Teléfono:
+    <input type="tel" name="telefono" required
+      pattern="[0-9]{8,15}" title="Solo podes ingresar numeros (8-15 dígitos)">
   </label>
+
 
   <button type="submit">Suscribirme</button>
 </form>
@@ -162,6 +167,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="../js/galeria.js"></script>
+<script src="../js/formulario.js"></script>
 </body>
 </html>
