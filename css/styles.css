@@ -660,6 +660,7 @@ ul li a {
     }
     /* parte autores */
 
+    /* parte autores */
 
     .contenedor-autores{
         margin: 0em 0em 15em 0em;
@@ -682,7 +683,53 @@ ul li a {
   }
 
   .imagen-con-texto p {
+      font-size: 1rem;}
+      
+    .contenedor-img-autores {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+  }
+
+  .imagen-con-texto {
+       max-width: 80%;
+  }
+
+  .imagen-con-texto h3 {
+      font-size: 1.4rem;
+  }
+
+  .imagen-con-texto p {
       font-size: 1rem;
+  }
+
+  /* parte gallery */ 
+
+  .carousel-custom {
+    margin-bottom: 0;
+  }
+  
+  .mute{
+    display: none;
+  }
+
+  .intCen{
+    align-items: center;
+  }
+
+  /* parte Bio */
+
+  .contenedor-bio{
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .img-bio {
+    max-width: 90%;
+  }
+  .contenedor-iframe-apple{
+    max-width: 90%;
   }
 
   /* parte gallery */ 
