@@ -427,15 +427,17 @@ ul li a {
 #tienda-section {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .img-tienda-contenedor {
   max-width: 40%;
-  height: 45rem;
 }
 
 .img-tienda-index {
-  mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+    width: 100%;
+  mask-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
 }
 
 .contenedor-boton-tienda {
@@ -571,6 +573,17 @@ ul li a {
 
 /*MEDIAQUERY*/
 @media (max-width: 800px){
+    body{
+        max-width: 100%;
+    }
+
+    .botones{
+         width: 10rem;
+        
+    }
+    .boton-ticket{
+        width: 8rem;
+    }
 
     #header-iconos{
         display: none;
@@ -580,6 +593,7 @@ ul li a {
         width: 100%;
     }
 
+    /*SECCION BIO INDEX*/
     .contenedor-inicio{
         display: none;
     }
@@ -587,20 +601,144 @@ ul li a {
     #bio-section{
         display: flex;
         flex-direction: column;
-    }
-    
-    .foto-bio{
         max-width: 100%;
     }
+    .foto-bio{
+        width: 100%;
+        max-width: 100%;
+        height: 30em;
+        margin: 0em 0em 3em 0em;
+    }
+
+    #img-bio-inicio{
+        width: 100%;
+        height: 30em;
+        max-width: 100%;
+         mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+    }
     
+    /*SECCION TOURS*/    
+    .contenedor-show{
+        width: 70%;
+        max-width: 70%;
+        display: flex;
+        justify-content: center;
+        border-radius: 2em 2em 2em 2em;
+    }
+
+    .contenedor-show-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor-fecha{
+        max-width: 100%;
+        font-size: 1.5em;
+        padding: 0 0 0 1em;
+    }
+
+    /*TIENDA INDEX*/
+    .img-tienda-contenedor{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #tienda-section{
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .img-tienda-index{
+        width: 100%;
+         mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+        
+    }
+
+    .contenedor-boton-tienda{
+        margin: 1em 0em 4em 0em;
+    }
+
+    /*GALERIA*/
+    .contenedor-fotos{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contenedor-fotos img{
+        width: 45%;
+    }
+
+    /*tienda*/
+
+    .boton-discos{
+        margin: 1em 0em 3em 0em;
+    }
+
+    /*
+  CSS para tu contenedor de productos
+*/
+.contenedor-productos-de-tienda {
+  /* 1. Convierte el contenedor en Flexbox */
+  display: flex;
+  
+  /* 2. Permite que las tarjetas bajen si no caben en una línea */
+  flex-wrap: wrap; 
+  
+  /* 3. Centra las tarjetas horizontalmente */
+  justify-content: center; 
+  
+  /* 4. Añade espacio entre las tarjetas */
+  gap: 1.5rem; 
+
+  /* Esto ya lo tenías, está bien */
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/*
+  CSS para las tarjetas (Desktop primero)
+*/
+.contenedor-productos-de-tienda .card {
+  /* 5. Les devolvemos su ancho de 18rem para pantallas grandes */
+  width: 18rem;
+  
+  /* Extra: Evita que la tarjeta se encoja demasiado */
+  flex-shrink: 0; 
+}
+.contenedor-productos-de-tienda .card {
+    /* 6. Hacemos que la tarjeta ocupe casi todo el ancho en móvil */
+    width: 90%; 
+  }
+
+.forms {
+  width: 90%;
+}
+
+.forms input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2em;
+  padding: 0.7em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10em;
+}
+
+.forms button {
+  padding: 0.8em;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #222;
+  border: none;
+  border-radius: 0.5em;
+}
 
 
-    
 
 
 
 
 
 }
-
-
