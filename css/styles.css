@@ -633,6 +633,7 @@ ul li a {
 
   .contenedor-bio{
     align-items: center;
+    margin-left: 0;
   }
 
   .img-bio {
@@ -641,7 +642,6 @@ ul li a {
   .contenedor-iframe-apple{
     max-width: 90%;
   }
-
 
 }
 
