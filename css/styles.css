@@ -8,20 +8,23 @@ h1 a{
 }
 
 
-/*  Revisar tamaños de las imagenes finales */
+
+.modVh{
+    height: 120vh;
+}
 
 .carousel-custom img{
-    height: 20rem;
+    height: 25rem;
 }
 .contenedor-img-autores{
     padding: 15em 0 0 0em;
 }
 
 .carousel-custom{
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
 }
-/* Revisar tamaños de las imagenes finales */ 
+
 
 .forms {
   display: flex;
@@ -56,6 +59,8 @@ h1 a{
   font-size: 1rem;
   border: none;
 }
+
+
 
 
 .us {
@@ -112,6 +117,16 @@ header{
     width: 100%;
     
 }
+
+/* menu cascada */
+.dropdown-menu.custom-cascada {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+}
+
+
 header h1{
     width: 33%;
     letter-spacing: 0.09em;
