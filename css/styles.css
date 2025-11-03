@@ -441,7 +441,7 @@ ul li a{
 .contenedor-boton-tienda{
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 70%;
 }
 .botonizquierda{
     display: flex;
@@ -516,7 +516,7 @@ ul li a{
    position: relative;
 }
 
-.contenedor-titulo-tours{
+.contenedor-titulo{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -527,6 +527,23 @@ ul li a{
     padding: 0em 0em 5em 0em;
 }
 
-.contenedor-tours{
+.contenedor-contenido{
     padding: 20em 0em 0em 0em;
+}
+
+
+
+/*
+===============
+-------DISCOS
+===============
+*/
+
+.contenedor-productos-de-tienda{
+    width: 100%;
+    padding: 1em 20em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
 }
