@@ -631,18 +631,33 @@ ul li a {
 
   /* parte Bio */
 
-  .contenedor-bio{
-    align-items: center;
-    margin-left: 0;
+  .contenedor-img-bio {
+    padding: 10em 0 0 0; /*problema de ubi */
   }
 
   .img-bio {
-    max-width: 90%;
-  }
-  .contenedor-iframe-apple{
-    max-width: 90%;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
   }
 
+  .contenedor-texto-bio {
+    padding: 1em 2em;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .contenedor-iframe-apple {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .contenedor-iframe-apple iframe {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
 }
 
 
